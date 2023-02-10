@@ -1,25 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-#myDIV {
-  height:800px; 
-  background-color: coral;
-  border: 10px dashed black;
-  padding: 25px;
-  background-position-x: left, center, right; 
-  background-image: url(https://github.com/Ginger123456789/supersimple-website/blob/main/AH-ah%20Boy.jpg?raw=true), url(https://github.com/Ginger123456789/supersimple-website/blob/main/Ah-ah%20land.jpg?raw=true), url(https://github.com/Ginger123456789/supersimple-website/blob/main/Ah-ah%20home.jpg?raw=true);
-  background-repeat: no-repeat; 
-}  
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #862424;
+  padding: 20px;
+  text-align: center;
+}
 </style>
 </head>
 <body>
 
-<h1>AH-ah Boy!</h1>
-
-<div id="myDIV">
-The adventures of AH-ah Boy!.
+<div class="header">
+  <h1>The adventures of Ah-ah Boy</h1>
 </div>
 
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+
+</head>
+<body>
+
+<div class="gallery">
+  <a target="_blank" href="https://github.com/Ginger123456789/supersimple-website/blob/main/AH-ah%20Boy.jpg?raw=true">
+    <img src="https://github.com/Ginger123456789/supersimple-website/blob/main/AH-ah%20Boy.jpg?raw=true" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">AH-ah Boy</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://github.com/Ginger123456789/supersimple-website/blob/main/Ah-ah%20land.jpg?raw=true">
+    <img src="https://github.com/Ginger123456789/supersimple-website/blob/main/Ah-ah%20land.jpg?raw=true" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">AH-ah villiage</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://github.com/Ginger123456789/supersimple-website/blob/main/Ah-ah%20home.jpg?raw=true">
+    <img src="https://github.com/Ginger123456789/supersimple-website/blob/main/Ah-ah%20home.jpg?raw=true" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">AH-ah home</div>
+</div>
+
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Who is AH-ah Boy</h1>
+<p>He is an adventurous character</p>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color: rgb(247, 243, 243);
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 class="glow">Only distance will lead to growth</h1>
+     
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+</style>
+</head>
+<body>
+
+<p>Click on the icon to toggle between thumbs-up and thumbs-down (like/dislike):</p>
+
+<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+</body>
+</html>
+
